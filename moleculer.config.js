@@ -27,7 +27,7 @@ module.exports = {
 
   registry: {
     strategy: Moleculer.Strategies.RoundRobin,
-    preferLocal: true,
+    preferLocal: true
   },
 
   circuitBreaker: {
@@ -35,15 +35,15 @@ module.exports = {
     maxFailures: 3,
     halfOpenTime: 10 * 1000,
     failureOnTimeout: true,
-    failureOnReject: true,
+    failureOnReject: true
   },
 
   validation: true,
   validator: null,
-  metrics: false,
+  metrics: true,
   metricsRate: 1,
-  statistics: false,
+  statistics: true,
   internalActions: true,
 
-  hotReload: false,
+  hotReload: false
 };

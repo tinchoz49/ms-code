@@ -22,7 +22,7 @@ module.exports = {
       handler(ctx) {
         const { value } = ctx.params;
 
-        return ctx.call('musixmatch.searchByAny', {
+        return ctx.call('musicExplorer.searchByAny', {
           value
         });
       }

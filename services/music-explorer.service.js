@@ -4,7 +4,7 @@ const { create } = require('apisauce');
  * Schema for musixmatch service
  */
 module.exports = {
-  name: 'musixmatch',
+  name: 'musicExplorer',
 
   /**
    * Service settings
