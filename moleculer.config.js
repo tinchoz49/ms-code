@@ -40,9 +40,9 @@ module.exports = {
 
   validation: true,
   validator: null,
-  metrics: true,
+  metrics: false,
   metricsRate: 1,
-  statistics: true,
+  statistics: false,
   internalActions: true,
 
   hotReload: false

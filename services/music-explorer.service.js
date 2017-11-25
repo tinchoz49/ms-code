@@ -19,7 +19,6 @@ module.exports = {
    */
   actions: {
     searchByAny: {
-      cache: true,
       handler(ctx) {
         const { value } = ctx.params;
 
@@ -41,7 +40,12 @@ module.exports = {
       );
 
       if (ok) {
-        return data.message.body.track_list;
+        const list = data.message.body.track_list;
+        return list.map(({ track }) => ({
+          name: track.track_name,
+          album: track.album_name,
+          artist: track.artist_name
+        }));
       }
 
       return [];

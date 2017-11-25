@@ -72,10 +72,7 @@ module.exports = {
         });
       }
 
-      this.api
-        .post(`/api/v1/spans`, [payload])
-        .then(response => this.logger.info(response))
-        .catch(err => this.logger.error('Span sending error!', err.response.data));
+      this.api.post(`/api/v1/spans`, [payload]);
     }
   },
   created() {
